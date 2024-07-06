@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" />
+</head>
+
+<body>
+  <div class="container-fluid top-image border-bottom border-4 border-dark">
+    <div class="container-fluid">
+      <div class="row gx-5">
+        <div class="col">
+          <div class="d-flex justify-content-start">
+            <img src="netflix-logo.PNG" class="img-fluid mt-4" alt="Netflix Logo">
+          </div>
+        </div>
+        <div class="col">
+          <div class="d-flex justify-content-end">
+            <div class="btn-group me-3 mt-4" role="group">
+              <button type="button" class="btn dropdown-toggle btn-outline-light" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-globe"></i> English
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Hindi</a></li>
+              </ul>
+            </div>
+            <div class="btn-group me-2 mt-4" role="group" aria-label="Second group">
+              <button type="button" class="btn red-button" onclick="signIn()">Sign in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center text-light my-auto block">
+        <div class="row">
+          <div class="col mt-sm-4">
+            <h1>Unlimited movies, TV shows and more.</h1>
+            <h3>Watch anywhere. Cancel anytime.</h3>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <br>
+            <div class="container text-start">
+              <div class="row">
+                <div class="col col-md-6 d-flex justify-content-end p-0" style="height:50px; width: 60%;">
+                  <input id="input-email" type="email" class="form-control h-100" style="width:70%;" placeholder="Email">
+                </div>
+                <div class="col col-md-6 p-0" style="height:50px; width: 40%;">
+                  <button class="btn text-start button-color h-100" style="width: 50%;" onclick="getStarted('input-email')">Get Started <i class="bi bi-caret-right-fill"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 1 -->
+  <div class="d-flex p-2 back-black border-top border-bottom border-4 border-dark">
+    <div class="col col-sm-12 col-md-6 my-auto p-5">
+      <div class="p-1">
+        <h1>Enjoy on Your TV.</h1>
+        <h5>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h5>
+      </div>
+    </div>
+    <div class="col col-sm-12 col-md-6 my-auto d-flex justify-content-center">
+      <iframe src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" width="400" height="270" frameborder="0" class="giphy-embed" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="d-flex p-2 back-lg-black border-top border-bottom border-4 border-dark">
+    <div class="col col-sm-12 col-md-6 my-auto d-flex justify-content-center">
+      <img class="img-fluid" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg">
+    </div>
+    <div class="col col-sm-12 col-md-6 my-auto p-5">
+      <div class="p-1">
+        <h1>Download your shows to watch offline.</h1>
+        <h5>Save your favourites easily and always have something to watch.</h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3 -->
+  <div class="d-flex p-2 back-black border-top border-bottom border-4 border-dark">
+    <div class="col col-sm-12 col-md-6 my-auto p-5">
+      <div class="p-1">
+        <h1>Watch everywhere.</h1>
+        <h5>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h5>
+      </div>
+    </div>
+    <div class="col col-sm-12 col-md-6 my-auto d-flex justify-content-center">
+      <iframe src="https://giphy.com/embed/QXCmokDXM7WGNli8aa" width="400" height="270" frameborder="0" class="giphy-embed" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Section 4 -->
+  <div class="d-flex p-2 back-lg-black border-top border-bottom border-4 border-dark">
+    <div class="col col-sm-12 col-md-6 my-auto d-flex justify-content-center">
+      <img class="img-fluid" src="https://occ-0-2085-2186.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVxdX2WnFSp49eXb1do0euaj-F8upNImjofE77XStKhf5kUHG94DPlTiGYqPeYN
